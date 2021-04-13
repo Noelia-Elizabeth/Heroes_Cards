@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+#descuento {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background: #1CD1B0;
+    padding-left: 62.57px;
+}
+
+header {
+    background-color: #00669F;
+    color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    padding-left: 62.57px;
+    z-index: 3;
+}
+
+.Card {
+    display: block;
+    background-color: #F3F3F3;
+    width: 200px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.ImgBatman {
+    height: 100px;
+    background-image: url('../img/bg-batman.jpg');
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.ImgMaravilla {
+    height: 100px;
+    background-image: url('../img/bg-wonderw.jpg');
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.ImgSuper {
+    height: 100px;
+    background-image: url('../img/bg-superman.jpg');
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.text {
+    height: 200px;
+}
+
+h2 {
+    margin-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#parrafo {
+    text-align: left;
+    margin: 5% 5%;
+}
+
+.link {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color:  #00669F;
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+    left: 25%;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 15%;
+}
+
+#plus {
+    color: #00669F;
+    font-size: 250%;
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+
+#heart {
+    color: #CC2424;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5%;
+    padding: 1% 0;
+    background-color:  #00669F;
+    color: #FFFFFF;
+}

@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+:root {
+    --BgColor: #00669F;
+    --FontColor: #FFFFFF;
+}
+
 #descuento {
     position: relative;
     left: 0px;
@@ -15,8 +20,8 @@
 }
 
 header {
-    background-color: #00669F;
-    color: #FFFFFF;
+    background-color: var(--BgColor);
+    color: var(--FontColor);
     position: sticky;
     top: 0;
     padding-left: 62.57px;
@@ -41,6 +46,16 @@ header {
     background-size: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+#ImgBatman {
+    background-image: url('../img/batman.jpg');
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-size: cover;
+
 }
 
 .ImgMaravilla {
@@ -79,8 +94,8 @@ h2 {
     display: block;
     width: 100px;
     height: 30px;
-    background-color:  #00669F;
-    color: #FFFFFF;
+    background-color:  var(--BgColor);
+    color: var(--FontColor);
     text-decoration: none;
     position: relative;
     left: 25%;
@@ -92,7 +107,7 @@ h5 {
 }
 
 #plus {
-    color: #00669F;
+    color: var(--BgColor);
     font-size: 250%;
     position: fixed;
     right: 0;
@@ -110,6 +125,6 @@ footer {
     text-align: center;
     margin-top: 5%;
     padding: 1% 0;
-    background-color:  #00669F;
-    color: #FFFFFF;
+    background-color:  var(--BgColor);
+    color: var(--FontColor);
 }

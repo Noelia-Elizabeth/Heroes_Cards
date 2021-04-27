@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="../css/styles.css" rel="stylesheet">
+        <title></title>
+    </head>
+
+    <body>
+        <div id="descuento">20% de descuento en todos los productos!</div>
+        <header>
+            <img src="../img/icono_tienda.svg">
+            <h1>Card Super Heroes</h1>
+        </header>
+
+        <main>
+            <section id="sectionAgregar">
+                <div id="cardAgregar">
+                    <div id="titlesAgregar">
+                    <h2>Añadí tu super!</h2></br> 
+                    <p>Agregá tu personaje favorito completando las opciones.</p>
+                    </div>
+                    <form id="formAgregar" action="../index.html" method="GET"></form>
+                        <fieldset id="fieldset1">
+                            <label id="labelRequired" for="name">Nombre</label>
+                            <input type="" id="name" name="name" required>
+                            <label for="date">Fecha</label>
+                            <input type="date"" id="date" name="date">
+                            <textarea name="description" id="description" placeholder="Descripción"></textarea>
+                        </fieldset>
+                        <fieldset id="fieldset2">
+                            <label id="labelRequired" for="especie">Especie</label>
+                            <select id="especie" name="especie" required>
+                                <option value="">Unknown</option>
+                                <option value="animal">Animal</option>
+                                <option value="alien">Alien</option>
+                            </select>
+                            <label for="file">Agregar archivo</label>
+                            <input type="file" id="file" name="file">
+                            <label id="powerLabel" for="power">Poderes</label> </br></br> 
+                            <input type="checkbox" id="power" name="power" value="volar"> Volar </br> </br> 
+                            <input type="checkbox" id="power" name="power" value="superInteligencia"> SuperInteligencia </br></br> 
+                            <input type="checkbox" id="power" name="power" value="laser"> Vista de rayos láser </br></br> 
+                            <input type="checkbox" id="power" name="power" value="dinero"> Billetera gorda </br></br> 
+                            <hr/></br> 
+                            <label for="personaje">Tipo de personaje</label> </br></br> 
+                            <input type="radio" id="personajes" name="personajes" value="heroe">Héroe/Heroina </br></br> 
+                            <input type="radio" id="personajes" name="personajes" value="villano">Villano/Villana </br></br> 
+                        </fieldset>
+                        <button id="buttonAgregar" type="submit">Añadir</button>
+                    </form>
+                </div>
+           </section>
+        </main>
+
+        <footer>
+            <p>Todos los derechos reservados a FRONT END I</p>
+        </footer>
+    
+    </body>
+
+</html>

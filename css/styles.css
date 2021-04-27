@@ -118,6 +118,15 @@ ul {
     position: relative;
 }
 
+section {
+    position: relative;
+}
+
+#sectionAgregar {
+    margin: 5% 0;
+    height: 870px;
+}
+
 #sectionHome {
     display: flex;
     width: 1000px;
@@ -150,9 +159,11 @@ ul {
 }
 
 .Card {
+    display: inline-block;
     background-color: #F3F3F3;
     width: 200px;
     height: 420px;
+    margin: 0 auto;
     position: relative;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -160,6 +171,11 @@ ul {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
+}
+
+.Card:hover {
+    width: 25%;
+    transition: 0.3s;
 }
 
 .CardDetail {
@@ -173,6 +189,93 @@ ul {
     margin-top: 5%;
     border-radius: var(--BorderRadius);
     box-shadow: 0px 4px 4px 0px #00000025;
+}
+
+
+#cardAgregar {
+    background-color: var(--BgColor);
+    color: #FBFFFD;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    border-radius: 25px;
+}
+
+#titlesAgregar {
+    display: block;
+    text-align: center;
+    margin: 5%;
+}
+
+#titlesAgregar h2{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#titlesAgregar p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+fieldset {
+    width: 45%;
+    height: 600px;
+    position: absolute;
+    top: 15%;
+    border: none;
+    margin: 3%;
+}
+
+#fieldset2 {
+    position: absolute;
+    right: 0;
+}
+
+#name, #date, #description, #especie, #file{
+    margin: 3% 0;
+    height: 10%;
+    border: none;
+    border-radius: 15px;
+}
+
+#name, #date, #especie, #file {
+    height: 10%;
+}
+
+#description {
+    height: 54%;
+}
+
+#file {
+    margin-bottom: 6%;
+}
+
+#power, #personajes {
+    font-family: 'Karla', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    display: inline;
+    transform: scale(1.75);
+    width: 8%;
+    height: 2%;
+    position: relative;
+    top: 0.35%;
+}
+
+#file {
+    border: none;
+}
+
+#labelRequired::before {
+    content: "*";
 }
 
 .ImgBatman, .ImgMaravilla, .ImgSuper, .ImgHarley {
@@ -201,6 +304,12 @@ ul {
 
 }
 
+.Card:hover > #ImgBatman{
+    height: 20%;
+    transition: 0.3s;
+    left: 85px;
+}
+
 .ImgMaravilla {
     background-image: url('../img/bg-wonderw.jpg');
     background-size: cover;
@@ -221,6 +330,12 @@ ul {
     bottom: 40px;
     background-position: -10px 2px;
 
+}
+
+.Card:hover > #ImgMaravilla{
+    height: 20%;
+    transition: 0.3s;
+    left: 85px;
 }
 
 .ImgSuper {
@@ -245,6 +360,12 @@ ul {
 
 }
 
+.Card:hover > #ImgSuper{
+    height: 20%;
+    transition: 0.3s;
+    left: 85px;
+}
+
 .ImgHarley {
     background-image: url('../img/BG-Harley.jpeg');
     background-size: cover;
@@ -263,6 +384,12 @@ ul {
     position: relative;
     left: 60px;
     bottom: 40px;
+}
+
+.Card:hover > #ImgHarley{
+    height: 20%;
+    transition: 0.3s;
+    left: 85px;
 }
 
 #ImgHarleyDetail {
@@ -384,6 +511,19 @@ button {
     font-weight: 700;
 }
 
+#buttonAgregar {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%;
+    height: 10%;
+    margin-bottom: 3%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .botonResetear, .botonEntrar {
     width: 45%;
     margin: 2%;
@@ -445,6 +585,11 @@ select {
     right: 0;
     top: 50%;
     z-index: 3;
+}
+
+#plus:hover {
+    color: #001D2D;
+    transition: 0.3s;
 }
 
 #heart {

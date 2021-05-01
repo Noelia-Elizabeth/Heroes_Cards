@@ -74,8 +74,9 @@ h1 {
 
 nav {
     background-color: #001D2D;
-    position: absolute;
-    top:90px;
+    position: sticky;
+    top: 75px;
+    z-index: 3;
     height: 30px;
     width: 100%;
     box-shadow: 0px 10px 7px 0px var(--ColorShadow);
@@ -124,7 +125,7 @@ section {
 
 #sectionAgregar {
     margin: 5% 0;
-    height: 870px;
+    height: 950px;
 }
 
 #sectionHome {
@@ -225,17 +226,15 @@ section {
 }
 
 fieldset {
+    display: inline-block;
     width: 45%;
-    height: 600px;
-    position: absolute;
-    top: 15%;
+    height: 540px;
     border: none;
-    margin: 3%;
-}
-
-#fieldset2 {
-    position: absolute;
-    right: 0;
+    margin: 2%;
+    font-family: 'Karla', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
 }
 
 #name, #date, #description, #especie, #file{
@@ -243,6 +242,10 @@ fieldset {
     height: 10%;
     border: none;
     border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 #name, #date, #especie, #file {
@@ -258,16 +261,16 @@ fieldset {
 }
 
 #power, #personajes {
-    font-family: 'Karla', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 16px;
     display: inline;
     transform: scale(1.75);
     width: 8%;
     height: 2%;
     position: relative;
     top: 0.35%;
+}
+
+.power:checked {
+    background: #4DD1FB;
 }
 
 #file {
@@ -305,9 +308,9 @@ fieldset {
 }
 
 .Card:hover > #ImgBatman{
-    height: 20%;
     transition: 0.3s;
     left: 85px;
+    transform: scale(1.1);
 }
 
 .ImgMaravilla {
@@ -333,9 +336,9 @@ fieldset {
 }
 
 .Card:hover > #ImgMaravilla{
-    height: 20%;
     transition: 0.3s;
     left: 85px;
+    transform: scale(1.1);
 }
 
 .ImgSuper {
@@ -361,9 +364,9 @@ fieldset {
 }
 
 .Card:hover > #ImgSuper{
-    height: 20%;
     transition: 0.3s;
     left: 85px;
+    transform: scale(1.1);
 }
 
 .ImgHarley {
@@ -387,9 +390,9 @@ fieldset {
 }
 
 .Card:hover > #ImgHarley{
-    height: 20%;
     transition: 0.3s;
     left: 85px;
+    transform: scale(1.1);
 }
 
 #ImgHarleyDetail {
@@ -465,13 +468,13 @@ div h2 {
 }
 
 form {
-    width: 55%;
-}
-
-form * {
-    margin: 2% 0;
     width: 100%;
 }
+
+/*form * {
+    margin: 2% 0;
+    width: 100%;
+}*/
 
 input {
     width: 100%;
@@ -512,16 +515,22 @@ button {
 }
 
 #buttonAgregar {
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-    width: 40%;
-    height: 10%;
-    margin-bottom: 3%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
+    width: 40%;
+    position: relative;
+    margin: 3% 0;
+    left: calc(50% - 20%);
+    padding: 2% 0;
+}
+
+#buttonAgregar:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .botonResetear, .botonEntrar {
@@ -559,6 +568,10 @@ select {
     padding: 6%;
 }
 
+.link:hover {
+    background-color: #001D2D;
+}
+
 .linkDetail {
     display: block;
     color: var(--FontColor);
@@ -580,10 +593,13 @@ select {
 
 #plus {
     color: var(--BgColor);
-    font-size: 250%;
+    background-color: #F3F3F3;
+    border-radius: 50px;
+    background-size: 5%;
+    font-size: 300%;
     position: fixed;
-    right: 0;
-    top: 50%;
+    right: 3%;
+    top: 60%;
     z-index: 3;
 }
 

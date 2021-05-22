@@ -1,0 +1,112 @@
+#sectionAgregar {
+    margin: 5% 0;
+    height: 950px;
+}
+
+#cardAgregar {
+    background-color: var(--BgColor);
+    color: #FBFFFD;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    border-radius: 25px;
+}
+
+#titlesAgregar {
+    display: block;
+    text-align: center;
+    margin: 5%;
+}
+
+#titlesAgregar h2{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#titlesAgregar p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+fieldset {
+    display: inline-block;
+    width: 45%;
+    height: 540px;
+    border: none;
+    margin: 2%;
+    font-family: 'Karla', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+#name, #date, #description, #especie, #file{
+    margin: 3% 0;
+    height: 10%;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#name, #date, #especie, #file {
+    height: 10%;
+}
+
+#description {
+    height: 54%;
+}
+
+#file {
+    margin-bottom: 6%;
+}
+
+#power, #personajes {
+    display: inline;
+    transform: scale(1.75);
+    width: 8%;
+    height: 2%;
+    position: relative;
+    top: 0.35%;
+}
+
+.power:checked {
+    background: #4DD1FB;
+}
+
+#file {
+    border: none;
+}
+
+#labelRequired::before {
+    content: "*";
+}
+
+#buttonAgregar {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    width: 40%;
+    position: relative;
+    margin: 3% 0;
+    left: calc(50% - 20%);
+    padding: 2% 0;
+}
+
+#buttonAgregar:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
